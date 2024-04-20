@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="charity_profile.js"></script>
+    
+</head>
+
+<body class="body-home">
+    <header>
+    <div class="flex">
+
+    <img src="HelpFinderLogo.png" alt="Help Hub Home" class="logoImg">
+    <h1 class="titleName"> HelpHub</h1>
+
+        <nav>
+            <ul class = "navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Charities.html">Opportunities</a></li>
+                <li><a href="Support.html">Support</a></li>
+                <li><a href="RateUs.html">Rate Us</a></li>
+                <li><a href="SignIn.html">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+    </div>
+        <br><br>
+        <br><br>
+
+    <main>         
+            <img class="profileImage" src="hospice.jpg"  alt="hospice patient" width=300px img>
+        
+            <h2 class="profileTitle">Compationate Care</h2>
+        
+            <ul>
+                <li>Companion Volunteer</li>
+                <li>Respite Volunteer</li>
+                <li>Bereavement Support</li>
+            </ul> 
+        
+            <p>789 Serenity Lane, Villageton</p>
+        
+            <p>Offering comfort, companionship, and dignity to terminally ill
+             patients and their families during their end-of-life journey.</p>
+        
+              <div class="openBtn">
+            <button  onclick="openForm()"><strong>Sign Up</strong></button>
+        </div>
+        <div class="loginPopup">
+            <div class="formPopup" id="popupForm">
+                <form action="/action_page.php" class="formContainer">
+                <h2>Please Fill out the Form to Sign Up</h2>
+                <label for="email">
+                    <strong>E-mail</strong>
+                </label>
+                <input type="text" id="email" placeholder="Your Email" name="email" required>
+                <label for="psw">
+                    <strong>Preferred Position</strong>
+                </label>
+                <input type="text" id="psw" placeholder="Job Type" name="psw" required>
+                <button type="submit" class="btn">Reserve</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+        </div>
+
+        <h2> Feel Free to Donate Toward this Organization:</h2>
+         <!-- This form takes options of various prices -->
+          <form action="https://ww10.aitsafe.com/cf/add.cfm" method="post">
+            <input name="userid" type="hidden" value="C4381857">
+          
+            <select name="productpr">
+              <option value="Small Donation, Small Donation:10"> Small Donation, $10 </option>
+              <option value="Medium Donation, Medium Donation:40"> Medium Donation, $40</option>
+              <option value="Large Donation, Large Donation:120"> Large Donation $120</option>
+              <option value="Extremely Generous Donation, Extremely Generous Donation:1000"> Extremely Generous Donation $1000</option>
+            </select> 
+
+            <input name="return" type="hidden" value="https://andrewpfeiffer28.github.io/">
+            <button class="center" class="button">Donate</button>
+          </form>
+     
+    </main>
+
+</html>
